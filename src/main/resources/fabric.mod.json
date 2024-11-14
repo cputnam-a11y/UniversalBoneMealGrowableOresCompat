@@ -1,0 +1,35 @@
+{
+	"schemaVersion": 1,
+	"id": "universalbonemealgrowableorescompat",
+	"version": "${version}",
+	"name": "UniversalBoneMealGrowableOresCompat",
+	"description": "A Fabric mod that adds compatibility between Universal Bonemeal and Growable Ores.",
+	"authors": [
+		"CPutnam-A11Y"
+	],
+	"contact": {
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/universalbonemealgrowableorescompat/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"universalbonemealgrowableorescompat.UniversalBoneMealGrowableOresCompat"
+		]
+	},
+	"mixins": [
+		"universalbonemealgrowableorescompat.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.9",
+		"minecraft": "~1.21.1",
+		"java": ">=21",
+		"fabric-api": "*",
+		"universalbonemeal": "*",
+		"growable_ores": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
